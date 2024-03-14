@@ -1,0 +1,204 @@
+/* VARIABLES */
+:root{
+    --aqua: #96cbce;
+    --dark: #27354a ;
+    --text:  #7395af ;
+    --title:  #597092 ;
+}
+/* UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+/* HEADER CONTAINER*/
+.header{
+    display: flex;
+    width: 100%;
+    padding: 20px 50px ;
+    background-color: var(--dark);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--aqua);
+    padding: 5px 20px ;
+}
+
+/* BAR OF NAVEGATION */
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar a{
+    color: var(--aqua);
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: var(--aqua) solid ;
+}
+/* PHOTO OF BACKGROUND */
+
+.container-head{
+    position: relative;
+    display: inline-block; 
+    background: url(./Assets/images/WoodCover.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+/* TEXT THAT IS OVER THE PHOTO'S BACKGROUND */
+.subtitle{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    margin: 25px;
+    font-size: 30px;
+    color: var(--aqua);
+    background-color:var(--dark) ;
+}
+
+/* MAIN OF THE WEBSIDE */
+.container-main{
+    display:flex;
+    padding: 25px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+}
+.sections{
+    display:flex;  
+    align-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+
+.titles{
+    width: 25%;
+    padding-right: 10px;
+    border-right: var(--title) solid;
+    margin-bottom: 20px;
+    text-align: right;
+    flex: 0 0 20%;
+}
+.titles h1{
+    font-size: 45px;
+} 
+/* CONTAINER ABOUT ME, ITS TITLE AND CONTENT */
+.About-me-container{
+    flex-grow: 1;
+    padding: 0px 100px 0px 25px;
+} 
+.About-me-container p{
+    font-size: 25px;
+} 
+/* CONTAINER WORK, ITS TITLE AND CONTENT*/
+.work-container{
+    flex-grow: 1;
+    padding: 0px 100px 0px 25px;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.Sub-b{
+    width: 40%;
+    margin: 15px auto;
+    height: 200px;
+    background-image: url(./Assets/images/image3.webp);
+    background-position: center;
+    text-decoration: none;
+    border: solid var(--aqua) 10px;
+    transition: 0.3s;
+}
+#Main-B{
+    width: 90%;
+    height: 350px;
+    margin: 15px auto;
+    background-image: url(./Assets/images/image1.jpg);
+    background-position: center;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    border: solid var(--aqua) 10px;
+    transition: 0.3s;
+}
+.Sub-b:hover{
+    transform: scale(1.05,1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#Main-B:hover{
+    transform: scale(1.05,1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.subtitle-M{
+    background-color: var(--aqua);
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+    color: var(--dark);
+}
+
+.subtitle-W , .subtitle-W2{
+    display: flex;
+    margin-top: 120px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: var(--aqua);
+    color: var(--dark);
+}
+
+/* CONTAINER CONCTACT ME, ITS TITLE AND CONTENT */
+.Contact-me-container {
+    text-decoration: none;
+    justify-content: space-between;
+    padding-left: 25px;
+    flex-grow: 1;
+}
+.Contact-me-container ul{
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    width: 70%;
+    text-decoration: none;
+}
+.Contact-me-container ul li{
+    display: inline-block;
+    font-size: 25px;
+    width: 70%
+}
+/* FOOTER */
+footer {
+    background-color: var(--dark);
+    height: 150px;
+}
+footer p{
+    text-align: center;
+    padding: 50px;
+    color: var(--aqua);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* ADAPTATION TO DIFERENTS SIZES OF SCREENS */
+@media screen and (max-width: 700px) {
+    */{
+        flex-direction: column;
+    }
+}
